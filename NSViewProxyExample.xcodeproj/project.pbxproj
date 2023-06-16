@@ -11,6 +11,7 @@
 		8FB54AFE2A3BE4880038423A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB54AFD2A3BE4880038423A /* Assets.xcassets */; };
 		8FB54B012A3BE4880038423A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB54B002A3BE4880038423A /* Preview Assets.xcassets */; };
 		8FB54B0F2A3CBD550038423A /* NSViewProxy in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB54B0E2A3CBD550038423A /* NSViewProxy */; };
+		8FB54B122A3CBE850038423A /* example.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FB54B112A3CBE850038423A /* example.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		8FB54AFD2A3BE4880038423A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FB54B002A3BE4880038423A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FB54B022A3BE4880038423A /* NSViewProxyExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSViewProxyExample.entitlements; sourceTree = "<group>"; };
+		8FB54B112A3CBE850038423A /* example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example.png; sourceTree = "<group>"; };
+		8FB54B132A3CBE900038423A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +39,8 @@
 		8FB54AED2A3BE4860038423A = {
 			isa = PBXGroup;
 			children = (
+				8FB54B132A3CBE900038423A /* README.md */,
+				8FB54B102A3CBE750038423A /* Docs */,
 				8FB54AF82A3BE4860038423A /* NSViewProxyExample */,
 				8FB54AF72A3BE4860038423A /* Products */,
 				8FB54B0A2A3BE4EC0038423A /* Frameworks */,
@@ -74,6 +79,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FB54B102A3CBE750038423A /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				8FB54B112A3CBE850038423A /* example.png */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB54B122A3CBE850038423A /* example.png in Resources */,
 				8FB54B012A3BE4880038423A /* Preview Assets.xcassets in Resources */,
 				8FB54AFE2A3BE4880038423A /* Assets.xcassets in Resources */,
 			);
