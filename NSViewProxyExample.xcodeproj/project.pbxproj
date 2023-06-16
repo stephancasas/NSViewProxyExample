@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8FB54AFA2A3BE4860038423A /* NSViewProxyExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB54AF92A3BE4860038423A /* NSViewProxyExampleApp.swift */; };
-		8FB54AFC2A3BE4860038423A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB54AFB2A3BE4860038423A /* ContentView.swift */; };
 		8FB54AFE2A3BE4880038423A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB54AFD2A3BE4880038423A /* Assets.xcassets */; };
 		8FB54B012A3BE4880038423A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB54B002A3BE4880038423A /* Preview Assets.xcassets */; };
+		8FB54B0F2A3CBD550038423A /* NSViewProxy in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB54B0E2A3CBD550038423A /* NSViewProxy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8FB54AF62A3BE4860038423A /* NSViewProxyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSViewProxyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB54AF92A3BE4860038423A /* NSViewProxyExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewProxyExampleApp.swift; sourceTree = "<group>"; };
-		8FB54AFB2A3BE4860038423A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8FB54AFD2A3BE4880038423A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FB54B002A3BE4880038423A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FB54B022A3BE4880038423A /* NSViewProxyExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSViewProxyExample.entitlements; sourceTree = "<group>"; };
@@ -27,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB54B0F2A3CBD550038423A /* NSViewProxy in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +38,7 @@
 			children = (
 				8FB54AF82A3BE4860038423A /* NSViewProxyExample */,
 				8FB54AF72A3BE4860038423A /* Products */,
+				8FB54B0A2A3BE4EC0038423A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				8FB54AF92A3BE4860038423A /* NSViewProxyExampleApp.swift */,
-				8FB54AFB2A3BE4860038423A /* ContentView.swift */,
 				8FB54AFD2A3BE4880038423A /* Assets.xcassets */,
 				8FB54B022A3BE4880038423A /* NSViewProxyExample.entitlements */,
 				8FB54AFF2A3BE4880038423A /* Preview Content */,
@@ -67,6 +67,13 @@
 				8FB54B002A3BE4880038423A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8FB54B0A2A3BE4EC0038423A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +92,9 @@
 			dependencies = (
 			);
 			name = NSViewProxyExample;
+			packageProductDependencies = (
+				8FB54B0E2A3CBD550038423A /* NSViewProxy */,
+			);
 			productName = NSViewProxyExample;
 			productReference = 8FB54AF62A3BE4860038423A /* NSViewProxyExample.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +123,9 @@
 				Base,
 			);
 			mainGroup = 8FB54AED2A3BE4860038423A;
+			packageReferences = (
+				8FB54B0D2A3CBD550038423A /* XCRemoteSwiftPackageReference "NSViewProxy" */,
+			);
 			productRefGroup = 8FB54AF72A3BE4860038423A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +152,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FB54AFC2A3BE4860038423A /* ContentView.swift in Sources */,
 				8FB54AFA2A3BE4860038423A /* NSViewProxyExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FB54B0D2A3CBD550038423A /* XCRemoteSwiftPackageReference "NSViewProxy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephancasas/NSViewProxy";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FB54B0E2A3CBD550038423A /* NSViewProxy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FB54B0D2A3CBD550038423A /* XCRemoteSwiftPackageReference "NSViewProxy" */;
+			productName = NSViewProxy;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FB54AEE2A3BE4860038423A /* Project object */;
 }

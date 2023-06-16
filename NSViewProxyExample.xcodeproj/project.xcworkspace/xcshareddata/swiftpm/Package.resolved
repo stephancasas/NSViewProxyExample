@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "nsviewproxy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephancasas/NSViewProxy",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ac4d380a669eccdc9b6fa09f0045249d0a47f721"
+      }
+    }
+  ],
+  "version" : 2
+}
